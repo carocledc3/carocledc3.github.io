@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    height: 100%;
+    display: block;
+    @apply min-h-full min-w-full bg-gradient-to-br from-jx-50 to-jx-100 dark:from-jx-800 dark:to-jx-900;
+}
+
+h1 {
+    @apply text-jx-800 dark:text-jx-100 font-serif text-2xl
+}
+
+body {
+    @apply m-8
+}
