@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'serif': ["Playwrite AU QLD", 'ui-serif', 'serif'],
+      'serif': ["Noto Serif", 'ui-serif', 'serif'],
     },
     extend: {
       colors: {
