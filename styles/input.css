@@ -5,7 +5,15 @@
 html {
     height: 100%;
     display: block;
-    @apply min-h-full min-w-full bg-gradient-to-br from-jx-50 to-jx-100 dark:from-jx-800 dark:to-jx-900;
+    background-color: #d5e4f4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23adc5e9' fill-opacity='0.3'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+    @apply min-h-full min-w-full bg-jx-100 dark:bg-jx-900;
+}
+
+@media (prefers-color-scheme:dark) {
+    html {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%231e1753' fill-opacity='0.3'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+    }
 }
 
 h1 {
@@ -17,7 +25,7 @@ p {
 }
 
 body {
-    @apply m-0 text-jx-950 dark:text-jx-50
+    @apply m-0 text-jx-800 dark:text-jx-50
 }
 
 .pagecont {
@@ -25,18 +33,22 @@ body {
 }
 
 #profpic {
-    @apply rounded-full h-48 w-48 md:h-64 md:w-64 dark:border-jx-50 border-jx-950 border-4 hover:rotate-180 transition-all
+    transition: 1s;
+    @apply rounded-full h-48 w-48 md:h-64 md:w-64 dark:border-jx-50 border-jx-800 border-4
 }
+
+#profpic:hover {transform: rotate(360deg);
+    transition: 1s;}
 
 .smcp { font-variant: small-caps;}
 .title { @apply text-lg w-auto text-center md:text-left flex flex-col gap-4 leading-none}
 .firstname {font-variant: small-caps; @apply text-2xl md:text-4xl lg:text-5xl font-black}
-.lastname {font-variant: small-caps; @apply text-2xl font-black }
+.lastname { @apply text-xl font-black }
 
-.vsep { @apply border-2 border-jx-950 dark:border-jx-50 w-full h-0 lg:h-64 lg:block lg:w-0 }
+.vsep { @apply border-2 border-jx-800 dark:border-jx-50 w-full h-0 lg:h-64 lg:block lg:w-0 }
 .namecont {@apply flex flex-col md:flex-row gap-8 justify-center items-center}
 
 .iconcont { @apply flex flex-col md:flex-row lg:flex-col gap-4 text-center md:text-left md:gap-16 lg:gap-4 }
 .iconcont a {
-    @apply text-lg hover:font-black transition-all
+    @apply text-lg hover:font-extrabold dark:shadow-jx-300 shadow-jx-400 hover:text-glow-sm transition-all
 }

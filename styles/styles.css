@@ -557,21 +557,24 @@ video {
 html {
   height: 100%;
   display: block;
+  background-color: #d5e4f4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23adc5e9' fill-opacity='0.3'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
   min-height: 100%;
   min-width: 100%;
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #E9F2F9 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(233 242 249 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-  --tw-gradient-to: #D5E4F4 var(--tw-gradient-to-position);
+  --tw-bg-opacity: 1;
+  background-color: rgb(213 228 244 / var(--tw-bg-opacity, 1));
 }
 
 @media (prefers-color-scheme: dark) {
   html {
-    --tw-gradient-from: #1E1753 var(--tw-gradient-from-position);
-    --tw-gradient-to: rgb(30 23 83 / 0) var(--tw-gradient-to-position);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-    --tw-gradient-to: #140D2E var(--tw-gradient-to-position);
+    --tw-bg-opacity: 1;
+    background-color: rgb(20 13 46 / var(--tw-bg-opacity, 1));
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  html {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%231e1753' fill-opacity='0.3'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
   }
 }
 
@@ -597,7 +600,7 @@ p {
 body {
   margin: 0px;
   --tw-text-opacity: 1;
-  color: rgb(13 8 28 / var(--tw-text-opacity, 1));
+  color: rgb(30 23 83 / var(--tw-text-opacity, 1));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -625,20 +628,13 @@ body {
 }
 
 #profpic {
+  transition: 1s;
   height: 12rem;
   width: 12rem;
   border-radius: 9999px;
   border-width: 4px;
   --tw-border-opacity: 1;
-  border-color: rgb(13 8 28 / var(--tw-border-opacity, 1));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-#profpic:hover {
-  --tw-rotate: 180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-color: rgb(30 23 83 / var(--tw-border-opacity, 1))
 }
 
 @media (min-width: 768px) {
@@ -653,6 +649,11 @@ body {
     --tw-border-opacity: 1;
     border-color: rgb(233 242 249 / var(--tw-border-opacity, 1));
   }
+}
+
+#profpic:hover {
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 .smcp {
@@ -694,9 +695,8 @@ body {
 }
 
 .lastname {
-  font-variant: small-caps;
-  font-size: 45px;
-  font-weight: 900
+  font-size: 36px;
+  font-weight: 900;
 }
 
 .vsep {
@@ -704,7 +704,7 @@ body {
   width: 100%;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(13 8 28 / var(--tw-border-opacity, 1));
+  border-color: rgb(30 23 83 / var(--tw-border-opacity, 1));
 }
 
 @media (min-width: 1024px) {
@@ -760,11 +760,21 @@ body {
 
 .iconcont a {
   font-size: 27px;
+  --tw-shadow-color: #5D78D3;
+  --tw-shadow: var(--tw-shadow-colored);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
 .iconcont a:hover {
-  font-weight: 900;
+  font-weight: 800;
+  text-shadow: 0 0 2px var(--tw-shadow-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  .iconcont a {
+    --tw-shadow-color: #85A1DE;
+    --tw-shadow: var(--tw-shadow-colored);
+  }
 }

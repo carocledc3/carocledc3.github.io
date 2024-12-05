@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
     "../*.{html,js}"
@@ -38,7 +39,24 @@ module.exports = {
         '5xl': '90px',
       }
     },
+
+    textShadow: {
+      sm: '0 0 2px var(--tw-shadow-color)',
+      DEFAULT: '0 0 4px var(--tw-shadow-color)',
+      lg: '0 0 16px var(--tw-shadow-color)',
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-glow': (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') }
+      )
+    }),
+  ],
 }
 
