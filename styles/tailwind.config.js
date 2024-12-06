@@ -1,10 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
 module.exports = {
+  darkMode: 'selector',
   content: [
     "../*.{html,js}"
   ],
   theme: {
+    screens: {
+      'xs': '360px',
+      'sm': '540px',
+      'md': '800px',
+      'lg': '1150px',
+      'xl': '1536px',
+      '2xl': '1920px',
+    },
+
     fontFamily: {
       'serif': ["Noto Serif", 'ui-serif', 'serif'],
     },
@@ -31,6 +41,7 @@ module.exports = {
       fontSize: {
         sm: '15px',
         base: '18px',
+        med: '22.5px',
         lg: '27px',
         xl: '36px',
         '2xl': '45px',
