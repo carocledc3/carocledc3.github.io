@@ -749,6 +749,7 @@ body:where(.dark, .dark *) {
   flex-direction: column;
   gap: 0.5rem;
   text-align: center;
+  font-size: 22.5px;
 }
 
 @media (min-width: 800px) {
@@ -756,6 +757,7 @@ body:where(.dark, .dark *) {
     flex-direction: row;
     gap: 4rem;
     text-align: left;
+    font-size: 27px;
   }
 }
 
@@ -766,8 +768,10 @@ body:where(.dark, .dark *) {
   }
 }
 
-.iconcont a {
-  font-size: 22.5px;
+.iconrow  a {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
   --tw-shadow-color: #5D78D3;
   --tw-shadow: var(--tw-shadow-colored);
   transition-property: all;
@@ -775,32 +779,25 @@ body:where(.dark, .dark *) {
   transition-duration: 150ms;
 }
 
-.iconcont a:hover {
+.iconrow  a:hover {
   font-weight: 800;
   text-shadow: 0 0 2px var(--tw-shadow-color);
 }
 
-@media (min-width: 800px) {
-  .iconcont a {
-    font-size: 27px;
-  }
-}
-
-.iconcont a:where(.dark, .dark *) {
+.iconrow  a:where(.dark, .dark *) {
   --tw-shadow-color: #85A1DE;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.iconrow {
-  display: flex;
-  flex-direction: row;
-}
-
-.material-symbols-outlined {
-}
-
 #fish:hover:after {
   content: ' 🐟';
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+
+#fish:hover:before {
+  content: '🐟 ';
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms

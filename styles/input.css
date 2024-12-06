@@ -67,21 +67,19 @@ body {
 }
 
 .iconcont {
-    @apply flex flex-col md:flex-row lg:flex-col gap-2 text-center md:text-left md:gap-16 lg:gap-4
+    @apply flex flex-col md:flex-row lg:flex-col gap-2 text-center md:text-left md:gap-16 lg:gap-4 text-med md:text-lg
 }
 
-.iconcont a {
-    @apply text-med md:text-lg hover:font-extrabold dark:shadow-jx-300 shadow-jx-400 hover:text-glow-sm transition-all
-}
+.iconrow  a { @apply flex flex-row gap-4 hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400 }
 
-.iconrow { @apply flex flex-row }
-
-.material-symbols-outlined {
-    
-}
 
 #fish:hover:after {
     content: ' 🐟';
+    @apply transition-opacity
+}
+
+#fish:hover:before {
+    content: '🐟 ';
     @apply transition-opacity
 }
 
