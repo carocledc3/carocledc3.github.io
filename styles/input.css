@@ -29,15 +29,27 @@ body {
 }
 
 .pagecont {
-    @apply flex mx-16 gap-6 md:gap-12 h-screen flex-col lg:flex-row justify-center items-center
+    @apply flex gap-6 md:gap-12 h-screen flex-col lg:flex-row justify-center items-center mx-16
 }
 
-#profpic {
+.colpagecont {
+    @apply flex gap-6 md:gap-12 h-screen flex-col justify-center items-center mx-16 lg:mx-96
+}
+
+.parcont {
+    @apply flex flex-col gap-4 justify-center items-center
+}
+
+#profpic, #profpic-red {
     transition: transform 1s;
     @apply rounded-full h-48 w-48 md:h-64 md:w-64 dark:border-jx-50 border-jx-700 border-4
 }
 
-#profpic:hover {
+#profpic-red {
+    @apply h-32 w-32 md:h-48 md:w-48
+}
+
+#profpic:hover, #profpic-red:hover {
     transform: rotate(360deg);
     transition: transform 1s;
 }
@@ -63,20 +75,44 @@ body {
     @apply border-2 border-jx-800 dark:border-jx-50 w-full h-0 lg:h-64 lg:block lg:w-0
 }
 
+.sep {
+    @apply border-2 border-jx-800 dark:border-jx-50 w-full h-0
+}
+
 .namecont {
     @apply flex flex-col md:flex-row gap-8 justify-center items-center
 }
 
 .iconcont {
-    @apply flex flex-col md:flex-row lg:flex-col gap-2 text-center md:text-left md:gap-16 lg:gap-4 text-med md:text-lg
+    @apply flex flex-col md:flex-row lg:flex-col gap-2 text-center md:text-left md:gap-16 lg:gap-4 text-base md:text-lg
 }
 
-.iconrow  a { @apply flex flex-row gap-4 hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400 }
+.iconrow a { @apply flex flex-row gap-4 hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400 }
 
+nav {
+    @apply fixed w-full my-4 text-base flex flex-row justify-center items-center gap-4
+}
+
+.navcont {
+    @apply flex flex-row justify-center items-center gap-8 text-lg
+}
+
+nav a, p a {
+    @apply hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400
+}
+
+p a {
+    @apply dark:text-jx-300 text-jx-600 underline
+}
 
 #fish:hover:after {
     content: ' 🐟';
     @apply transition-opacity
+}
+
+iframe {
+    width: 420px; height: 420px;
+    @apply dark:border-jx-50 border-jx-700 border-4
 }
 
 slash {
@@ -90,4 +126,12 @@ footer {
 
 .switch {
     @apply fixed m-4 text-lg hover:cursor-pointer
+}
+
+.indicator {
+    @apply fixed m-4 top-0 right-0 text-jx-700 dark:text-jx-300
+}
+
+.switch, .navcont, .indicator {
+    @apply bg-jx-300 dark:bg-jx-700 px-2 rounded-lg bg-opacity-85 dark:bg-opacity-85 shadow-md shadow-jx-300 dark:shadow-jx-900
 }
