@@ -133,5 +133,5 @@ footer {
 }
 
 .switch, .navcont, .indicator {
-    @apply bg-jx-300 dark:bg-jx-700 px-2 rounded-lg bg-opacity-85 dark:bg-opacity-85 shadow-md shadow-jx-300 dark:shadow-jx-900
+    @apply bg-jx-200 dark:bg-jx-700 px-2 rounded-lg bg-opacity-85 dark:bg-opacity-85 shadow-md shadow-jx-300 dark:shadow-jx-900
 }

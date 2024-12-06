@@ -968,7 +968,7 @@ footer {
 
 .switch, .navcont, .indicator {
   border-radius: 0.5rem;
-  background-color: rgb(133 161 222 / var(--tw-bg-opacity, 1));
+  background-color: rgb(173 197 233 / var(--tw-bg-opacity, 1));
   --tw-bg-opacity: 0.85;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
