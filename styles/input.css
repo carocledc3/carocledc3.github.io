@@ -78,11 +78,6 @@ body {
     @apply transition-opacity
 }
 
-#fish:hover:before {
-    content: '🐟 ';
-    @apply transition-opacity
-}
-
 slash {
     content: '/';
     @apply text-jx-400
