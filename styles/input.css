@@ -84,5 +84,9 @@ slash {
 }
 
 footer {
-    @apply flex justify-center items-center w-full fixed bottom-0 text-center my-2 
+    @apply hidden xs:flex justify-center items-center w-full fixed bottom-0 text-center my-2 
+}
+
+.switch {
+    @apply fixed m-4 text-lg hover:cursor-pointer select-none
 }

@@ -807,9 +807,28 @@ footer {
   bottom: 0px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  display: flex;
+  display: none;
   width: 100%;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+@media (min-width: 360px) {
+  footer {
+    display: flex;
+  }
+}
+
+.switch {
+  position: fixed;
+  margin: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 27px;
+}
+
+.switch:hover {
+  cursor: pointer;
 }

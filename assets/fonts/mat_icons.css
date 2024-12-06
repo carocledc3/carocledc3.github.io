@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Material Symbols Outlined';
+    font-family: 'Material Symbols Sharp';
     font-style: normal;
+    
     src: url('./material_icons/MaterialSymbolsSharp.woff2') format('woff');
     }
-.material-symbols-outlined {
-    font-family: 'Material Symbols Outlined';
+.material-sym {
+    font-family: 'Material Symbols Sharp';
+    font-variation-settings: 'FILL' 01;
     display: inline;
     text-transform: none;
     letter-spacing: normal;
