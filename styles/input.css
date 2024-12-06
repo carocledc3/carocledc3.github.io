@@ -89,5 +89,5 @@ footer {
 }
 
 .switch {
-    @apply fixed m-4 text-lg hover:cursor-pointer select-none
+    @apply fixed m-4 text-lg hover:cursor-pointer
 }

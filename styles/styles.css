@@ -824,9 +824,6 @@ footer {
 .switch {
   position: fixed;
   margin: 1rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
   font-size: 27px;
 }
 
