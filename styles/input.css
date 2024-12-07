@@ -101,7 +101,7 @@ p.itemdesc {
 }
 
 .iconcont {
-    @apply flex flex-col md:flex-row lg:flex-col gap-2 text-center md:text-left md:gap-16 lg:gap-4 text-base md:text-lg
+    @apply flex flex-col md:flex-wrap md:flex-row justify-center lg:justify-start lg:flex-col gap-2 text-center md:text-left md:gap-16 lg:gap-4 text-base md:text-lg leading-normal md:leading-none lg:leading-normal
 }
 
 .iconrow a { @apply flex flex-row gap-4 hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400 }
@@ -141,7 +141,7 @@ slash {
 }
 
 footer {
-    @apply hidden xs:flex justify-center items-center w-full fixed bottom-0 text-center my-2 
+    @apply hidden xs:flex items-center w-full fixed bottom-0 text-center m-2 left-0 dark:text-jx-100/50 dark:text-jx-900/50
 }
 
 .switch {
