@@ -6,6 +6,18 @@ module.exports = {
     "../*.{html,js}"
   ],
   theme: {
+    fontSize: {
+      sm: '14px',
+      base: '18px', // +4
+      med: '22px', // +5.5
+      lg: '27px', // +7
+      xl: '33px', // +8.5
+      '2xl': '40px', // +10
+      '3xl': '48px', // +11.5
+      '4xl': '57px',  
+      '5xl': '77px', 
+    },
+
     screens: {
       'xs': '360px',
       'sm': '540px',
@@ -38,17 +50,7 @@ module.exports = {
         
       },
 
-      fontSize: {
-        sm: '15px',
-        base: '18px',
-        med: '22.5px',
-        lg: '27px',
-        xl: '36px',
-        '2xl': '45px',
-        '3xl': '54px',
-        '4xl': '72px',
-        '5xl': '90px',
-      }
+      
     },
 
     textShadow: {
