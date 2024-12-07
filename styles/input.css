@@ -123,6 +123,8 @@ li a {
     @apply font-bold
 }
 
+.galpara li a:before{content: '[';} .galpara li a:after{content: ']';}
+
 p a {
     @apply dark:text-jx-300 text-jx-600 underline
 }
