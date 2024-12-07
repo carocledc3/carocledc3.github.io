@@ -46,7 +46,7 @@ p.itemdesc {
 }
 
 .colpagecont {
-    @apply flex gap-6 md:gap-12 h-screen flex-col justify-start mt-20 items-center mx-16 lg:mx-64 xl:mx-96 mb-4
+    @apply flex gap-6 md:gap-12 h-screen flex-col justify-start mt-20 items-center mx-16 md:mx-32 lg:mx-64 xl:mx-72 mb-4
 }
 
 .parcont {
@@ -161,5 +161,5 @@ footer {
 }
 
 .galthumb {
-    @apply dark:border-jx-50 border-jx-700 border-4 rounded-lg
+    @apply dark:border-jx-50 border-jx-700 border-4 rounded-lg justify-self-center self-center
 }
