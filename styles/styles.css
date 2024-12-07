@@ -967,7 +967,7 @@ nav a:where(.dark, .dark *), p a:where(.dark, .dark *), li a:where(.dark, .dark 
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-.itemdesc li a {
+li a {
   font-weight: 700;
 }
 
@@ -1044,8 +1044,7 @@ footer {
   right: 0px;
   margin-left: 1rem;
   margin-right: 1rem;
-  max-height: -moz-max-content;
-  max-height: max-content;
+  height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(36 32 119 / var(--tw-text-opacity, 1));
 }
@@ -1072,14 +1071,14 @@ footer {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-shadow-color: rgb(43 49 159 / 0.2);
+  --tw-shadow-color: rgb(43 49 159 / 0.7);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
 .switch:where(.dark, .dark *), .navcont:where(.dark, .dark *), .indicator:where(.dark, .dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(36 32 119 / var(--tw-bg-opacity, 1));
-  --tw-shadow-color: rgb(13 8 28 / 0.2);
+  --tw-shadow-color: rgb(13 8 28 / 0.7);
   --tw-shadow: var(--tw-shadow-colored);
 }
 

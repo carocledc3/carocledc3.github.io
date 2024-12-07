@@ -117,7 +117,7 @@ nav {
 nav a, p a, li a {
     @apply hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400
 }
-.itemdesc li a {
+li a {
     @apply font-bold
 }
 
@@ -149,11 +149,11 @@ footer {
 }
 
 .indicator {
-    @apply fixed mx-4 sm:top-0 bottom-0 right-0 text-jx-700 dark:text-jx-300 max-h-max
+    @apply fixed mx-4 sm:top-0 bottom-0 right-0 text-jx-700 dark:text-jx-300 h-6
 }
 
 .switch, .navcont, .indicator {
-    @apply bg-jx-200 dark:bg-jx-700 px-2 rounded-lg rounded-t-none shadow-lg shadow-jx-600/20 dark:shadow-jx-950/20 
+    @apply bg-jx-200 dark:bg-jx-700 px-2 rounded-lg rounded-t-none shadow-lg shadow-jx-600/70 dark:shadow-jx-950/70 
 }
 
 .galitem {
