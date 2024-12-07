@@ -18,7 +18,11 @@ html.dark {
 }
 
 h1 {
-    @apply text-jx-800 dark:text-jx-100 text-2xl font-black text-center
+    @apply dark:text-jx-800 text-jx-100 text-3xl font-black text-center shadow-md shadow-jx-300 dark:shadow-jx-900 dark:bg-jx-100 bg-jx-800 px-4 rounded-lg w-full
+}
+
+h2 {
+    @apply text-jx-800 dark:text-jx-100 text-xl font-black
 }
 
 p {
@@ -34,7 +38,7 @@ body {
 }
 
 .colpagecont {
-    @apply flex gap-6 md:gap-12 h-screen flex-col justify-center items-center mx-16 lg:mx-64 xl:mx-96
+    @apply flex gap-6 md:gap-12 h-screen flex-col justify-start mt-20 items-center mx-16 lg:mx-64 xl:mx-96
 }
 
 .parcont {
@@ -53,6 +57,10 @@ body {
 #profpic:hover, #profpic-red:hover {
     transform: rotate(360deg);
     transition: transform 1s;
+}
+
+.galthumb {
+    @apply max-w-48 max-h-48
 }
 
 .smcp {
@@ -91,7 +99,7 @@ body {
 .iconrow a { @apply flex flex-row gap-4 hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400 }
 
 nav {
-    @apply fixed w-full my-4 text-base flex flex-row justify-center items-center gap-4
+    @apply top-0 fixed w-full my-4 text-base flex flex-row justify-center items-center gap-4
 }
 
 .navcont {
@@ -126,7 +134,7 @@ footer {
 }
 
 .switch {
-    @apply fixed m-4 text-lg hover:cursor-pointer
+    @apply fixed m-4 text-lg hover:cursor-pointer top-0
 }
 
 .indicator {
@@ -135,4 +143,12 @@ footer {
 
 .switch, .navcont, .indicator {
     @apply bg-jx-200 dark:bg-jx-700 px-2 rounded-lg bg-opacity-85 dark:bg-opacity-85 shadow-md shadow-jx-300 dark:shadow-jx-900
+}
+
+.galitem {
+    @apply flex flex-row gap-4 justify-center
+}
+
+.galthumb {
+    @apply dark:border-jx-50 border-jx-700 border-4 rounded-lg
 }
