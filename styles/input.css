@@ -37,9 +37,9 @@ body {
     @apply flex gap-6 md:gap-12 h-screen flex-col lg:flex-row justify-center items-center mx-16
 }
 
-ul { @apply m-4}
+ul { @apply m-4 self-start md:self-center }
 
-ul li { @apply list-disc my-2 }
+ul li { @apply list-disc my-2 self-start md:self-center }
 
 p.itemdesc {
     @apply dark:text-jx-200 text-jx-700 text-sm
@@ -104,6 +104,8 @@ p.itemdesc {
     @apply flex flex-col md:flex-wrap md:flex-row justify-center lg:justify-start lg:flex-col gap-2 text-center md:text-left md:gap-16 lg:gap-4 text-base md:text-lg leading-normal md:leading-none lg:leading-normal
 }
 
+.staycols { @apply flex-col gap-4 md:gap-8 text-base }
+
 .iconrow a { @apply flex flex-row gap-4 hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400 }
 
 nav {
@@ -132,7 +134,11 @@ p a {
 
 iframe {
     width: 420px; height: 420px;
-    @apply dark:border-jx-50 border-jx-700 border-4
+    @apply dark:border-jx-100 border-jx-700 border-4 rounded-lg
+}
+
+iframe.blog {
+    @apply w-2/3 min-w-64
 }
 
 slash {
@@ -141,7 +147,7 @@ slash {
 }
 
 footer {
-    @apply hidden xs:flex items-center w-full fixed bottom-0 text-center m-2 left-0 dark:text-jx-100/50 dark:text-jx-900/50
+    @apply hidden xs:flex items-center w-full fixed bottom-0 text-center m-2 left-0 dark:text-jx-100/50 text-jx-900/50
 }
 
 .switch {
@@ -157,7 +163,7 @@ footer {
 }
 
 .galitem {
-    @apply flex md:flex-row sm:flex-col gap-4 justify-center bg-jx-400 dark:bg-jx-400 bg-opacity-20 dark:bg-opacity-20 rounded-md p-4
+    @apply flex md:flex-row flex-col gap-4 justify-center bg-jx-400 dark:bg-jx-400 bg-opacity-20 dark:bg-opacity-20 rounded-lg p-4
 }
 
 .galthumb {
