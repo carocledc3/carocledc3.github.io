@@ -1128,3 +1128,15 @@ footer:where(.dark, .dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(233 242 249 / var(--tw-border-opacity, 1));
 }
+
+.hl {
+  border-radius: 9999px;
+  background-color: rgb(20 13 46 / 0.1);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 14px;
+}
+
+.hl:where(.dark, .dark *) {
+  background-color: rgb(233 242 249 / 0.1);
+}
