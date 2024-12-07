@@ -1,9 +1,14 @@
+localStorage.setItem("theme", "dark");
+
 function themeToggle() {
+    
     $("html").toggleClass("dark");
-    if($(".switch").html() == "light_mode") {
-        $(".switch").html("dark_mode")
+    if(localStorage.getItem("theme") == "light") {
+        $(".switch").html("dark_mode");
+        localStorage.setItem("theme", "dark");
     } else {
-        $(".switch").html("light_mode")
+        $(".switch").html("light_mode");
+        localStorage.setItem("theme", "light");
     }
 }
 
