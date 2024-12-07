@@ -37,8 +37,16 @@ body {
     @apply flex gap-6 md:gap-12 h-screen flex-col lg:flex-row justify-center items-center mx-16
 }
 
+ul { @apply m-4}
+
+ul li { @apply list-disc my-2 }
+
+p.itemdesc {
+    @apply dark:text-jx-200 text-jx-700 text-sm
+}
+
 .colpagecont {
-    @apply flex gap-6 md:gap-12 h-screen flex-col justify-start mt-20 items-center mx-16 lg:mx-64 xl:mx-96
+    @apply flex gap-6 md:gap-12 h-screen flex-col justify-start mt-20 items-center mx-16 lg:mx-64 xl:mx-96 mb-4
 }
 
 .parcont {
@@ -99,15 +107,18 @@ body {
 .iconrow a { @apply flex flex-row gap-4 hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400 }
 
 nav {
-    @apply top-0 fixed w-full my-4 text-base flex flex-row justify-center items-center gap-4
+    @apply top-0 fixed sm:w-full text-base flex flex-row sm:justify-center sm:items-center gap-4 right-0 mx-4 sm:mx-0
 }
 
 .navcont {
-    @apply flex flex-row justify-center items-center gap-8 text-lg
+    @apply flex flex-row justify-center items-center gap-4 md:gap-8 text-lg
 }
 
-nav a, p a {
+nav a, p a, li a {
     @apply hover:font-extrabold hover:text-glow-sm transition-all dark:shadow-jx-300 shadow-jx-400
+}
+.itemdesc li a {
+    @apply font-bold
 }
 
 p a {
@@ -134,19 +145,19 @@ footer {
 }
 
 .switch {
-    @apply fixed m-4 text-lg hover:cursor-pointer top-0
+    @apply fixed mx-4 text-lg hover:cursor-pointer top-0
 }
 
 .indicator {
-    @apply fixed m-4 top-0 right-0 text-jx-700 dark:text-jx-300
+    @apply fixed mx-4 sm:top-0 bottom-0 right-0 text-jx-700 dark:text-jx-300 max-h-max
 }
 
 .switch, .navcont, .indicator {
-    @apply bg-jx-200 dark:bg-jx-700 px-2 rounded-lg bg-opacity-85 dark:bg-opacity-85 shadow-md shadow-jx-300 dark:shadow-jx-900
+    @apply bg-jx-200 dark:bg-jx-700 px-2 rounded-lg rounded-t-none shadow-lg shadow-jx-600/20 dark:shadow-jx-950/20 
 }
 
 .galitem {
-    @apply flex flex-row gap-4 justify-center
+    @apply flex flex-row gap-4 justify-center bg-jx-400 dark:bg-jx-400 bg-opacity-20 dark:bg-opacity-20 rounded-md p-4
 }
 
 .galthumb {
