@@ -30,7 +30,7 @@ p {
 }
 
 body {
-    @apply m-0 text-jx-800 dark:text-jx-50
+    @apply m-0 text-jx-800 dark:text-jx-50 w-full flex justify-center
 }
 /* PINGAS */
 .pagecont {
@@ -46,7 +46,7 @@ p.itemdesc {
 }
 
 .colpagecont {
-    @apply flex gap-6 md:gap-12 h-screen flex-col justify-start mt-20 items-center mx-16 md:mx-32 lg:mx-64 xl:mx-72 mb-4
+    @apply flex gap-6 md:gap-12 h-screen flex-col justify-start mt-20 items-center self-center w-11/12 sm:w-2/3 mb-4
 }
 
 .parcont {
@@ -145,7 +145,7 @@ footer {
 }
 
 .switch {
-    @apply fixed mx-4 text-lg hover:cursor-pointer top-0
+    @apply fixed mx-4 text-lg hover:cursor-pointer top-0 left-0
 }
 
 .indicator {
@@ -157,7 +157,7 @@ footer {
 }
 
 .galitem {
-    @apply flex flex-row gap-4 justify-center bg-jx-400 dark:bg-jx-400 bg-opacity-20 dark:bg-opacity-20 rounded-md p-4
+    @apply flex md:flex-row sm:flex-col gap-4 justify-center bg-jx-400 dark:bg-jx-400 bg-opacity-20 dark:bg-opacity-20 rounded-md p-4
 }
 
 .galthumb {
