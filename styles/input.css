@@ -169,7 +169,7 @@ footer {
 }
 
 .galthumb {
-    @apply dark:border-jx-50 border-jx-700 border-4 rounded-lg justify-self-center self-center
+    @apply dark:border-jx-50 border-jx-700 border-4 rounded-lg
 }
 
 .hl {
