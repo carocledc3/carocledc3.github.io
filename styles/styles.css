@@ -797,12 +797,17 @@ p.itemdesc:where(.dark, .dark *) {
 .galthumb {
   max-height: 12rem;
   max-width: 12rem;
-  align-self: flex-start;
-  justify-self: start;
+  align-self: center;
   border-radius: 0.5rem;
   border-width: 4px;
   --tw-border-opacity: 1;
   border-color: rgb(36 32 119 / var(--tw-border-opacity, 1));
+}
+
+@media (min-width: 800px) {
+  .galthumb {
+    align-self: flex-start;
+  }
 }
 
 .galthumb:where(.dark, .dark *) {
